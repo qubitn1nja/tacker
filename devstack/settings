@@ -44,7 +44,7 @@ if [ "${TACKER_MODE}" == "all" ]; then
     if [ "${KUBERNETES_VIM}" == "True" ]; then
         K8S_PHYS_NET=${K8S_PHYS_NET:-"k8s-physnet"}
         BR_K8S=${BR_K8S:-"br-k8s0"}
-        NET_K8S=${NET_K8S:-"k8s-public-net"}
+        NET_K8S=${NET_K8S:-"public"}
         SUBNET_K8S=${SUBNET_K8S:-"public-subnet"}
         FIXED_RANGE_K8S=${FIXED_RANGE_K8S:-192.168.28.0/22}
         NETWORK_GATEWAY_K8S=${NETWORK_GATEWAY_K8S:-192.168.28.1}
